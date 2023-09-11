@@ -1,0 +1,68 @@
++----------------------------------+
+|              iPhone              |
++----------------------------------+
+| - músicas: List<Música>         |
+| - chamadas: List<Chamada>       |
+| - abasNavegador: List<Aba>      |
++----------------------------------+
+| + ReproduzirMusica(): void      |
+| + PausarMusica(): void          |
+| + SelecionarMusica(Música): void|
+| + Ligacao(): void               |
+| + AtenderLigacao(): void        |
+| + IniciarCorreioVoz(): void     |
+| + ExibirPagina(String): void    |
+| + AdicionarNovaAba(): void      |
+| + AtualizarPagina(Aba): void    |
++----------------------------------+
+
++-------------------------+
+|       Reprodutor       |
++-------------------------+
+| + ReproduzirMusica(): void |
+| + PausarMusica(): void     |
+| + SelecionarMusica(Música): void|
++-------------------------+
+
++------------------------+
+|   AparelhoTelefonico   |
++------------------------+
+| + Ligacao(): void      |
+| + AtenderLigacao(): void|
+| + IniciarCorreioVoz(): void|
++------------------------+
+
++----------------------+
+| NavegadorInternet    |
++----------------------+
+| + ExibirPagina(String): void |
+| + AdicionarNovaAba(): void   |
+| + AtualizarPagina(Aba): void |
++----------------------+
+
++------------+
+|  Música    |
++------------+
+| - título: String   |
+| - artista: String  |
+| - duracao: int     |
++------------+
+
++------------+
+|  Chamada   |
++------------+
+| - numero: String   |
+| - duracao: int     |
++------------+
+
++---------+
+|   Aba   |
++---------+
+| - url: String     |
+| - conteudo: String|
++---------+
+
+
+
+
+
