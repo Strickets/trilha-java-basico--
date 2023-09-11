@@ -1,0 +1,86 @@
+import java.util.List;
+
+public class iPhone implements Reprodutor, AparelhoTelefonico, NavegadorInternet {
+    private List<Música> músicas;
+    private List<Chamada> chamadas;
+    private List<Aba> abasNavegador;
+
+    @Override
+    public void ReproduzirMusica() {
+         // Implementar a lógica
+    }
+
+    @Override
+    public void PausarMusica() {
+         // Implementar a lógica
+    }
+
+    @Override
+    public void SelecionarMusica(Música música) {
+         // Implementar a lógica
+    }
+
+    @Override
+    public void Ligacao() {
+         // Implementar a lógica
+    }
+
+    @Override
+    public void AtenderLigacao() {
+         // Implementar a lógica
+    }
+
+    @Override
+    public void IniciarCorreioVoz() {
+         // Implementar a lógica
+    }
+
+    @Override
+    public void ExibirPagina(String url) {
+      // Implementar a lógica
+    }
+
+    @Override
+    public void AdicionarNovaAba() {
+       // Implementar a lógica
+    }
+
+    @Override
+    public void AtualizarPagina(Aba aba) {
+        // Implementar a lógica
+    }
+}
+
+interface Reprodutor {
+    void ReproduzirMusica();
+    void PausarMusica();
+    void SelecionarMusica(Música música);
+}
+
+interface AparelhoTelefonico {
+    void Ligacao();
+    void AtenderLigacao();
+    void IniciarCorreioVoz();
+}
+
+interface NavegadorInternet {
+    void ExibirPagina(String url);
+    void AdicionarNovaAba();
+    void AtualizarPagina(Aba aba);
+}
+
+class Música {
+    private String título;
+    private String artista;
+    private int duracao;
+}
+
+class Chamada {
+    private String número;
+    private int duração;
+}
+
+class Aba {
+    private String url;
+    private String conteúdo;
+}
